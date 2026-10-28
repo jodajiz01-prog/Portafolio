@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplicación de facturación interna para una panadería familiar, desarrollada con Python y Flask.">
+  <title>Facturación para panadería — José Carmona</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/proyecto.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap header-inner">
+  <a href="../index.html#top" class="brand">JD<span class="brand-dot">.</span></a>
+  <a href="../index.html#projects" class="volver">← Volver a proyectos</a>
+</div></header>
+<main class="wrap caso">
+  <p class="section-tag">Proyecto personal · En prueba alfa</p>
+  <h1>Facturación para una panadería familiar</h1>
+  <p class="entradilla">Una herramienta para registrar ventas y mantener los comprobantes organizados, diseñada a partir del trabajo diario de una panadería.</p>
+  <ul class="tag-list tecnologias" aria-label="Tecnologías utilizadas">
+    <li>Python</li><li>Flask</li><li>SQLite</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+  </ul>
+
+  <section class="caso-seccion">
+    <h2>El problema</h2>
+    <p>La panadería necesitaba una forma más ordenada de registrar sus ventas que las facturas de papel. El objetivo fue crear una aplicación sencilla de usar desde un celular, con botones claros y pocos pasos para completar una venta.</p>
+  </section>
+  <section class="caso-seccion">
+    <h2>La solución</h2>
+    <p>Desarrollé una aplicación web con acceso por usuario, gestión de productos y un flujo para preparar, revisar y guardar comprobantes internos. El diseño se fue ajustando con las pruebas de la persona que la utiliza en el negocio.</p>
+    <div class="caso-grid">
+      <article class="caso-tarjeta"><h3>Ventas y comprobantes</h3><p>Búsqueda de productos, cantidades, cálculo de IVA configurado y revisión antes de guardar. Los comprobantes se pueden consultar e imprimir.</p></article>
+      <article class="caso-tarjeta"><h3>Precios flexibles</h3><p>El catálogo conserva los precios habituales y permite aplicar un precio general a una factura para acuerdos con clientes.</p></article>
+      <article class="caso-tarjeta"><h3>Organización</h3><p>Historial con búsqueda por cliente y fecha, anulación con motivo y descarga de copias de seguridad.</p></article>
+      <article class="caso-tarjeta"><h3>Uso cotidiano</h3><p>Interfaz adaptable para celular, con textos y controles grandes. Se prepara la recuperación de una factura pendiente en el mismo navegador.</p></article>
+    </div>
+  </section>
+  <section class="caso-seccion">
+    <h2>Estado y siguientes pasos</h2>
+    <p>El proyecto está en etapa alfa y se utiliza para probar el registro interno de ventas. Entre los siguientes pasos están mejorar la recuperación de datos y preparar la integración con la facturación electrónica de Hacienda.</p>
+    <p class="nota">Actualmente los comprobantes son registros internos: la aplicación todavía no los envía a Hacienda. Por privacidad, no se muestran datos de clientes ni acceso a la aplicación.</p>
+  </section>
+  <a class="btn btn-ghost" href="../index.html#projects">← Volver al portafolio</a>
+</main>
+<footer class="site-footer"><div class="wrap"><p>José Carmona Jiménez · Proyecto en desarrollo</p></div></footer>
+</body>
+</html>
