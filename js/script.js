@@ -17,14 +17,3 @@ navLinks.querySelectorAll('a').forEach(link => {
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
-
-// Formulario de contacto (placeholder: aún no envía a ningún servidor)
-const form = document.getElementById('contact-form');
-const formNote = document.getElementById('form-note');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  // TODO: conectar a un servicio real (Formspree, EmailJS, backend propio, etc.)
-  formNote.textContent = 'Este formulario todavía no está conectado a un servicio de envío real.';
-  form.reset();
-});

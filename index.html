@@ -16,7 +16,7 @@
   <div class="wrap header-inner">
     <a href="#top" class="brand">JD<span class="brand-dot">.</span></a>
     <nav class="main-nav" aria-label="Navegación principal">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+      <button class="nav-toggle" type="button" aria-label="Abrir o cerrar menú de navegación" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul id="nav-links" class="nav-links">
@@ -38,13 +38,13 @@
       <p class="eyebrow">Costa Rica · Disponibilidad inmediata</p>
       <h1>Construyo software.<br>Entiendo redes.<br><em>Pienso en seguridad.</em></h1>
       <p class="hero-sub">
-        José Carmona Jiménez — estudiante de Ingeniería del Software (Cenfotec), técnico en Redes (CCNA)
-        y en Ciberseguridad con DevOps (Virtual Learning Academy). Busco una pasantía o
-        puesto junior donde estas tres áreas se necesiten juntas, no por separado.
+        José Carmona Jiménez — estudiante de Ingeniería del Software en Cenfotec, con formación
+        en redes, ciberseguridad y DevOps. Busco una pasantía o puesto junior para construir
+        soluciones útiles y seguir creciendo profesionalmente.
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-        <a href="assets/CV_Jose_Carmona.pdf" class="btn btn-ghost" target="_blank">Descargar CV</a>
+        <a href="assets/CV_Jose_Carmona.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Descargar CV</a>
       </div>
     </div>
 
@@ -85,14 +85,14 @@
     <span class="section-tag">01 · Sobre mí</span>
     <div class="about-grid">
       <p class="about-text">
-        Empecé explorando ciberseguridad para tener claro qué había detrás de IT antes de meterme de lleno en algo específico. Ahí aprendí Linux, máquinas virtuales y Cisco Packet Tracer, y me enganché. De ahí salté al técnico en Redes (CCNA), y cuando conocí Ingeniería del Software en Cenfotec me di cuenta de que quería construir sistemas, además de asegurarlos y conectarlos. Ahora busco un lugar donde esa base de redes y seguridad sea parte real del trabajo, no un extra.
+        Empecé explorando ciberseguridad para tener claro qué había detrás de IT antes de meterme de lleno en algo específico. Ahí aprendí Linux, máquinas virtuales y Cisco Packet Tracer, y me enganché. Después continué con el técnico en Telecomunicaciones y formación en redes de Cisco. Cuando conocí Ingeniería del Software en Cenfotec me di cuenta de que quería construir sistemas, además de asegurarlos y conectarlos. Ahora busco un lugar donde esa base de redes y seguridad sea parte real del trabajo, no un extra.
       </p>
       <ul class="about-facts">
         <li><span>Base</span>Santiago, San José, Costa Rica</li>
         <li><span>Enfoque</span>Software · Redes · Seguridad</li>
         <li><span>Buscando</span>Pasantía / puesto junior</li>
         <li><span>Disponibilidad</span>Inmediata</li>
-        <li><span>Inglés</span>Avanzado</li>
+        <li><span>Inglés</span>B2</li>
       </ul>
     </div>
   </section>
@@ -104,7 +104,7 @@
       <div class="skill-card">
         <h3>Software</h3>
         <ul class="tag-list">
-          <li>Java</li><li>TypeScript</li><li>HTML/CSS/JS</li><li>Git &amp; GitHub</li><li>Spring Boot</li>
+          <li>Python</li><li>Flask</li><li>Java</li><li>Spring Boot</li><li>C# / ASP.NET</li><li>React</li><li>HTML/CSS/JS</li><li>TypeScript</li><li>MySQL / SQLite</li><li>Git &amp; GitHub</li>
         </ul>
       </div>
       <div class="skill-card">
@@ -116,7 +116,7 @@
       <div class="skill-card">
         <h3>Seguridad &amp; DevOps</h3>
         <ul class="tag-list">
-          <li>Fundamentos de Ciberseguridad</li><li>DevOps</li><li>Scripting Python</li><li>Automatización</li>
+          <li>Fundamentos de Ciberseguridad</li><li>DevOps</li><li>Automatización</li>
         </ul>
       </div>
     </div>
@@ -133,13 +133,13 @@
       </li>
       <li>
         <span class="timeline-date">Completado</span>
-        <h3>Técnico en Redes — CCNA</h3>
-        <p>Virtual Learning Academy</p>
+        <h3>Técnico en Telecomunicaciones</h3>
+        <p>Virtual Learning Academy · Formación en redes con Cisco Networking Academy</p>
       </li>
       <li>
         <span class="timeline-date">Completado</span>
         <h3>Técnico en Ciberseguridad con DevOps</h3>
-        <p>Universidad Castro Carazo</p>
+        <p>Universidad Castro Carazo · Curso de Cisco como parte del recorrido formativo</p>
       </li>
     </ol>
   </section>
@@ -151,6 +151,8 @@
       <article class="project-card">
         <span class="project-status">En desarrollo · Prueba alfa</span>
         <h3>Facturación para panadería</h3>
+        <p class="project-tech">Python · Flask · SQLite</p>
+        <figure class="project-preview"><img src="assets/proyectos/facturacion.png" alt="Ejemplo de selección y precio de un producto en la aplicación de facturación" loading="lazy"><figcaption>Vista con datos de ejemplo</figcaption></figure>
         <p>Aplicación web para registrar ventas y organizar comprobantes de una panadería familiar. Diseñada para facilitar el trabajo diario desde computadora o celular.</p>
         <div class="project-links">
           <a href="proyectos/facturacion-panaderia.html">Ver proyecto</a>
@@ -159,6 +161,7 @@
       <article class="project-card">
       <span class="project-status">Completado</span>
       <h3>Bakery Inventory System</h3>
+      <p class="project-tech">Java · Spring Boot · MySQL</p>
       <p>Sistema de inventario real para la panadería de mi papá: login con roles, gestión de productos, alertas de stock bajo y registro de entradas/salidas con historial filtrable. Java + Spring Boot + MySQL.</p>
       <div class="project-links">
     <a href="https://github.com/jodajiz01-prog/bakery-inventory-system" target="_blank" rel="noopener">Repositorio</a>
@@ -167,7 +170,9 @@
       <article class="project-card">
   <span class="project-status">Completado</span>
   <h3>Enterprise Network Lab</h3>
-  <p>Diseño de red empresarial: VLANs, DHCP, DNS, NAT, ACL. Documentado en Packet Tracer.</p>
+  <p class="project-tech">Cisco Packet Tracer · VLAN · DHCP · ACL</p>
+  <figure class="project-preview project-preview-diagram"><img src="assets/proyectos/red-topologia.png" alt="Diagrama de la sede central y dos sucursales de la red simulada" loading="lazy"><figcaption>Diagrama de la red simulada</figcaption></figure>
+  <p>Diseño de una red empresarial con sede central y dos sucursales, documentando la topología, las decisiones y los problemas resueltos.</p>
   <div class="project-links">
     <a href="https://github.com/jodajiz01-prog/enterprise-network-lab" target="_blank" rel="noopener">Repositorio</a>
   </div>
@@ -175,14 +180,16 @@
       <article class="project-card">
         <span class="project-status">En construcción</span>
         <h3>Python Automation Toolkit</h3>
+        <p class="project-tech">Python · Automatización</p>
         <p>Colección de scripts: ping scanner, port scanner, generador de contraseñas.</p>
         <div class="project-links">
-          <a href="#">Código</a>
+          <span class="project-pending">Código próximamente</span>
         </div>
       </article>
       <article class="project-card">
   <span class="project-status">Sitio web para clientes</span>
   <h3>Fisioterapia Nathaly Madrigal</h3>
+  <p class="project-tech">HTML · CSS · JavaScript</p>
   <p>Landing page para una clínica de fisioterapia: diseño responsive, mapa interactivo de zonas del cuerpo, formulario de contacto integrado con WhatsApp.</p>
   <div class="project-links">
     <a href="https://jodajiz01-prog.github.io/fisioterapia-nathaly/" target="_blank" rel="noopener">Ver sitio</a>
@@ -204,19 +211,11 @@
           <li><a href="https://github.com/jodajiz01-prog" target="_blank" rel="noopener">GitHub — jodajiz01-prog</a></li>
         </ul>
       </div>
-      <form class="contact-form" id="contact-form">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Correo</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Mensaje</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-        <p class="form-note" id="form-note" role="status"></p>
-      </form>
+      <div class="contact-panel">
+        <h3>Escríbeme directamente</h3>
+        <p>Cuéntame sobre tu equipo, proyecto u oportunidad. Puedes contactarme por correo.</p>
+        <a class="btn btn-primary" href="mailto:jodajiz01@gmail.com">Enviar correo</a>
+      </div>
     </div>
   </section>
 

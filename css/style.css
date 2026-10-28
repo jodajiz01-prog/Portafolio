@@ -133,7 +133,9 @@ section{ padding: 70px 24px; border-top: 1px solid var(--border); }
 .timeline li{ display:grid; grid-template-columns: 120px 1fr; gap: 20px; border-bottom: 1px solid var(--border); padding-bottom: 22px; }
 .timeline-date{ font-family: var(--font-mono); font-size: 13px; color: var(--accent); }
 .timeline h3{ font-size: 18px; margin-bottom: 4px; }
-.timeline p{ margin:0; }
+.timeline p{ margin:0; grid-column:2; }
+.timeline-date{ grid-row: 1 / span 2; }
+.timeline li{ row-gap:4px; }
 
 /* Projects */
 .projects-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -162,10 +164,12 @@ section{ padding: 70px 24px; border-top: 1px solid var(--border); }
 /* ===== Responsive ===== */
 @media (max-width: 860px){
   .hero{ grid-template-columns: 1fr; padding-top: 60px; }
-  .hero-graphic{ order: -1; max-width: 280px; margin: 0 auto; }
+  .hero-graphic{ order: 0; max-width: 210px; margin: 0 auto; }
   .about-grid, .contact-grid{ grid-template-columns: 1fr; }
   .skills-grid, .projects-grid{ grid-template-columns: 1fr; }
   .timeline li{ grid-template-columns: 1fr; gap: 6px; }
+  .timeline-date{ grid-row:auto; }
+  .timeline p{ grid-column:1; }
 
   .nav-toggle{ display:flex; }
   .nav-links{
@@ -176,3 +180,13 @@ section{ padding: 70px 24px; border-top: 1px solid var(--border); }
   }
   .nav-links.open{ display:flex; }
 }
+
+.project-tech { color: var(--accent-2); font-family: var(--font-mono); font-size: 12px; line-height: 1.5; }
+.project-pending { color: var(--text-muted); }
+.contact-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; }
+.contact-panel h3 { margin-bottom: 10px; }
+
+.project-preview { margin: 2px 0 16px; }
+.project-preview img { display: block; width: 100%; height: 150px; object-fit: cover; object-position: center 38%; border: 1px solid var(--border); border-radius: 8px; background: #fff; }
+.project-preview-diagram img { object-fit: cover; padding: 0; }
+.project-preview figcaption { margin-top: 6px; color: var(--text-muted); font-size: 12px; }

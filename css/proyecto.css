@@ -17,3 +17,7 @@
   .caso-grid { grid-template-columns: 1fr; }
   .entradilla { font-size: 17px; }
 }
+
+.caso-imagen { margin: 24px 0; max-width: 720px; }
+.caso-imagen img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius); }
+.caso-imagen figcaption { color: var(--text-muted); font-size: 13px; margin-top: 8px; }
